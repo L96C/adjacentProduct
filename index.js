@@ -3,7 +3,7 @@ const pug = require('pug')
 const bodyParser = require('body-parser')
 const app = express()
 const utils = require('./controllers/functions.js')
-let port = process.env.PORT;
+let port = process.env.PORT
 
 // Set views, static folder, body parser
 app.set('view engine','pug')
@@ -28,6 +28,6 @@ app.get('*', (req, rep) => {
 })
 
 if (port == null || port == "") {
-  port = 8000;
+  port = 8000
 }
-app.listen(port);
+app.listen(port)
