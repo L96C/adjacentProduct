@@ -16,7 +16,7 @@ html
         input.fillbutton(type="button",name="buttonFill",onclick="fillForm()",value="Fill")
       form.mainform(action="/" method="POST")
         p.titleform="Here's your serie of numbers to study :"
-        textarea.mainfield#formtofill(type="text",name="serie",placeholder=serie)
+        textarea.mainfield#formtofill(type="text",name="serie",placeholder=serie readonly)
         .inputfactors
           p.titlefactors="How many consecutive factors to seek :"
           input.nbfactors(type="number",name="nbfactors",placeholder="N° of factors (max 15)")
