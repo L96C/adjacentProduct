@@ -1,8 +1,9 @@
 const express = require('express')
 const pug = require('pug')
-var bodyParser = require('body-parser')
+const bodyParser = require('body-parser')
 const app = express()
 const utils = require('./controllers/functions.js')
+let port = process.env.PORT;
 
 // Set views, static folder, body parser
 app.set('view engine','pug')
@@ -26,6 +27,7 @@ app.get('*', (req, rep) => {
   rep.render('404')
 })
 
-app.listen(3030, () => {
-  console.log("Serveur démarré")
-})
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
