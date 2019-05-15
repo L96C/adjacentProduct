@@ -18,7 +18,6 @@ app.get('/', (req, rep) => {
 app.post('/', (req, rep) => {
   let serie = req.body.serie.toString()
   let nb = parseInt(req.body.nbfactors)
-  console.log(serie,typeof serie,typeof nb)
   let result = utils.highestAdjacent(serie,nb)
   rep.render('index', {serie:serie,result:result.prod,chain:result.num,nb:nb})
 })
