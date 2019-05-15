@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Serif');
-/* 2019 - LC */
 
 
 /* Container */
@@ -142,8 +141,9 @@
 .cont .mainform .mainfield {
   margin-top:0;
   display:grid;
-  width:350px;
-  height:110px;
+  width:400px;
+  height:150px;
+  resize:none;
   grid-area:main;
   text-align:center;
   justify-self:center;
