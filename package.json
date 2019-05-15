@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "highestadjacentproduct",
   "version": "1.0.0",
   "description": "Find the highest adjacent product, in a given series of numbers",
@@ -16,11 +16,10 @@
     "product",
     "serie"
   ],
-  "dependencies" :
-  { 
-    "express" : "latest",
-    "body-parser" : "latest",
-    "pug" : "latest"  
+  "dependencies": {
+    "express": "latest",
+    "body-parser": "latest",
+    "pug": "latest"
   },
   "author": "LC",
   "license": "ISC",
