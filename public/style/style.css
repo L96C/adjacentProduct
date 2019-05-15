@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+/* 2019 - LC */
+
+
+/* Container */
+
+.cont {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgb(38, 56, 83);
+  display:grid;
+  grid-template:
+    [row1-start] "header header header" auto[row1-end]
+    [row2-start] ". formvalue ." auto [row2-end]
+    [row3-start] ". mainform ." auto [row3-end]
+    [row4-start] "footer footer footer" 1fr [row4-end]
+    / 0.1fr 1fr 0.1fr;
+}
+
+/* General */
+
+.cont input, .cont textarea {
+  border:0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Titres */
+
+.cont .titre {
+  display:grid;
+  grid-area:header;
+  justify-self:center;
+  align-self:center;
+  font-family:'PT Serif',Verdana;
+  font-size:20px;
+  color: #eee;
+}
+
+.cont .titre .subtitle {
+  text-align:center;
+  font-size:12px;
+  font-style:italic;
+}
+
+.cont .titre404 {
+  display:grid;
+  grid-area:mainform;
+  justify-self:center;
+  align-self:center;
+  font-family:'PT Serif',Verdana;
+  font-size:20px;
+  color: #eee;
+}
+
+/* Upper form */
+
+.cont .nbvalue {
+  display:grid;
+  grid-area:formvalue;
+  grid-template:
+    [row1-start] ". titlefill titlefill ." 0.1fr [row1-end]
+    [row2-start] ". nbvalues fillform ." 0.1fr [row2-end]
+    / 1fr auto auto 1fr;
+}
+
+.cont .nbvalue .nbv {
+  display:grid;
+  grid-area:nbvalues;
+  background-color:rgba(25,25,25,0.70);
+  color:#eee;
+  padding:5px;
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+  font-family:'PT Serif',Verdana;
+  font-size:12px;
+  text-align:center;
+  min-width:180px;
+}
+
+.cont .nbvalue .nbv:hover {
+  background-color:rgb(25,25,25);
+}
+
+.cont .nbvalue .titlefill {
+  color:#eee;
+  font-family:'PT Serif',Verdana;
+  font-size:12px;
+  text-align:center;
+  display:grid;
+  grid-area:titlefill;
+  margin:2px;
+}
+
+.cont .nbvalue .fillbutton {
+  display:grid;
+  grid-area:fillform;
+  background-color:rgba(93, 26, 26, 0.70);
+  color:#eee;
+  font-family:'PT Serif',Verdana;
+  font-size:12px;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+}
+
+.cont .nbvalue .fillbutton:hover {
+  background-color:rgb(93, 26, 26)
+}
+
+
+/* Main form */
+
+.cont .mainform {
+  display:grid;
+  grid-area:mainform;
+  grid-template: 
+    [row1-start] ". title title ." 0.1fr [row1-end]
+    [row2-start] "main main main main" 0.4fr [row2-end]
+    [row3-start] " . inputfactors inputfactors ." 0.1fr [row3-end]
+    [row4-start] "titlechain titlechain titlechain titlechain" 0.2fr [row4-end]
+    [row5-start] "titleresult titleresult titleresult titleresult" 0.2fr [row5-end]
+    / 1fr auto auto 1fr;
+}
+
+.cont .mainform .titleform {
+  display:grid;
+  grid-area:title;
+  align-self:center;
+  justify-self:center;
+  font-family:'PT Serif',Verdana;
+  font-size:12px;
+  color:#eee;
+  margin-bottom:2px;
+}
+
+.cont .mainform .mainfield {
+  margin-top:0;
+  display:grid;
+  width:350px;
+  height:110px;
+  grid-area:main;
+  text-align:center;
+  justify-self:center;
+  align-self:center;
+  padding:20px;
+  margin-bottom:10px;
+  background-color:rgba(25,25,25,0.70);
+  color:#eee;
+  border-radius:5px;
+}
+
+.cont .mainform .mainfield:hover {
+  background-color:rgb(25,25,25);
+}
+
+.cont .mainform .inputfactors {
+  display:grid;
+  grid-area:inputfactors;
+  grid-template:
+    [row1-start] ". titlefactors titlefactors ." [row1-end]
+    [row2-start] ". nbfactors submit ." [row2-end]
+    / 1fr auto auto 1fr;
+}
+
+.cont .mainform .inputfactors .titlefactors {
+  color:#eee;
+  font-family:'PT Serif',Verdana;
+  font-size:12px;
+  text-align:center;
+  display:grid;
+  grid-area:titlefactors;
+  margin:2px;
+}
+
+.cont .mainform .nbfactors {
+  display:grid;
+  grid-area:nbfactors;
+  min-width:180px;
+  background-color:rgba(25,25,25,0.70);
+  color:#eee;
+  padding:5px;
+  font-family:'PT Serif',Verdana;
+  font-size:12px;
+  text-align:center;
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+}
+
+.cont .mainform .nbfactors:hover {
+  background-color:rgb(25,25,25);
+}
+
+.cont .mainform .submitwhole {
+  display:grid;
+  grid-area:submit;
+  background-color:rgba(93, 26, 26, 0.70);
+  color:#eee;
+  font-family:'PT Serif',Verdana;
+  font-size:12px;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+}
+
+.cont .mainform .submitwhole:hover {
+  background-color:rgb(93, 26, 26)
+}
+
+.cont .mainform .titlechain {
+  display:grid;
+  text-align:center;
+  grid-area:titlechain;
+  align-self:center;
+  justify-self:center;
+  font-family:'PT Serif', Verdana;
+  font-size:14px;
+  color:#eee;
+  margin-bottom:5px;
+}
+
+.cont .mainform .titleresult {
+  display:grid;
+  grid-area:titleresult;
+  align-self:center;
+  justify-self:center;
+  font-family:'PT Serif', Verdana;
+  font-size:14px;
+  color:#eee;
+  margin-top:0;
+}
+
+/* Removing increment arrows */
+input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}

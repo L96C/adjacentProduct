@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title="Highest adjacent product"
+    link(rel="stylesheet",href="/assets/style/style.css")
+    script(src='/assets/js/userfunc.js')
+  body
+    .cont
+      p.titre
+        |Find the highest adjacent product
+        br
+        |#[span.subtitle In a given series of numbers]
+      .nbvalue
+        p.titlefill="How many random values to search in :"
+        input.nbv#nbvalues(type="number",name="nbvalue",min="1",max="500",placeholder="N° of random values (max 500)")
+        input.fillbutton(type="button",name="buttonFill",onclick="fillForm()",value="Fill")
+      form.mainform(action="/" method="POST")
+        p.titleform="Here's your serie of numbers to study :"
+        textarea.mainfield#formtofill(type="text",name="serie",placeholder=serie)
+        .inputfactors
+          p.titlefactors="How many consecutive factors to seek :"
+          input.nbfactors(type="number",name="nbfactors",placeholder="N° of factors (max 15)")
+          input.submitwhole(type="submit",value="Submit")
+        p.titlechain="The chain of "+nb+" factors producing the higest product is : "+chain
+        p.titleresult="The resulting product is : "+result

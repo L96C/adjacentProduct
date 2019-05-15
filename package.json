@@ -1,0 +1,31 @@
+﻿{
+  "name": "highestadjacentproduct",
+  "version": "1.0.0",
+  "description": "Find the highest adjacent product, in a given series of numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L96C/highestAdjacent.git"
+  },
+  "keywords": [
+    "maths",
+    "adjacent",
+    "product",
+    "serie"
+  ],
+  "dependencies" :
+  { 
+    "express" : "latest",
+    "body-parser" : "latest",
+    "pug" : "latest"  
+  },
+  "author": "LC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/L96C/highestAdjacent/issues"
+  },
+  "homepage": "https://github.com/L96C/highestAdjacent#readme"
+}
