@@ -16,10 +16,13 @@ app.get('/', (req, rep) => {
 })
 
 app.post('/', (req, rep) => {
-  let serie = req.body.serie.toString()
   let nb = parseInt(req.body.nbfactors)
+  if (!req.body.serie) rep.render('index', {serie:"You have to enter values",result:0,chain:0,nb:nb})
+  else {
+  let serie = req.body.serie.toString()
   let result = utils.highestAdjacent(serie,nb)
   rep.render('index', {serie:serie,result:result.prod,chain:result.num,nb:nb})
+  }
 })
 
 app.get('*', (req, rep) => {
