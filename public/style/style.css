@@ -52,10 +52,18 @@
   display:grid;
   grid-area:mainform;
   justify-self:center;
-  align-self:center;
   font-family:'Titillium Web',Verdana;
   font-size:1.5em;
   color: #eee;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.cont .titre404:hover {
+  font-size:3em;
 }
 
 /* Upper form */
