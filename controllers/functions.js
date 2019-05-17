@@ -1,6 +1,7 @@
 const highestAdjacent = (numbers, serie) => {
     let prod=1
     let num=''
+    if(serie>20) return {prod:0,num:0}
     for(i=1;i<=serie;i++) {
         let prod1=1
         let num1=''

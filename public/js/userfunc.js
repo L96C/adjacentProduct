@@ -1,10 +1,12 @@
 const fillForm = () => {
   let nb = document.getElementById("nbvalues").value
   let string = ''
-  for(i=1;i<=nb;i++)
-    string+=(Math.trunc(Math.random()*10)).toString()
-  document.getElementById("formtofill").value = string
-}
+  if(nb>500) {document.getElementById("formtofill").value = "Number of values should be under 500"}
+  else {
+    for(i=1;i<=nb;i++)
+      string+=(Math.trunc(Math.random()*10)).toString()
+      document.getElementById("formtofill").value = string
+}}
 
 // Enter key
 
