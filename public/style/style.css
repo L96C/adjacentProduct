@@ -3,6 +3,10 @@
 
 /* Container */
 
+body {
+  background-color:rgb(38, 56, 83);
+}
+
 .cont {
   position: absolute;
   top: 0;
