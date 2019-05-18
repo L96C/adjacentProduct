@@ -8,14 +8,13 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   background-color:rgb(38, 56, 83);
   display:grid;
   grid-template:
     [row1-start] "header header header" 0.2fr[row1-end]
     [row2-start] ". formvalue ." 0.1fr [row2-end]
     [row3-start] ". mainform ." 1fr [row3-end]
-    [row4-start] "footer footer footer" 0.1fr [row4-end]
+    [row4-start] "footer footer footer" auto [row4-end]
     / 0.1fr 1fr 0.1fr;
 }
 
